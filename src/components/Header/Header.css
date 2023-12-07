@@ -7,7 +7,7 @@
   justify-content: space-between;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  color: var(--secondary);
+  color: white;
 }
 
 .h-menu {
@@ -16,5 +16,11 @@
 
 .h-menu > *:hover {
   cursor: pointer;
-  color: #ffffff;
+  background-color: var(--primary);
+  opacity: 1;
+  border-radius: 4px;
+}
+
+.h-menu a {
+  padding: 8px;
 }
