@@ -1,0 +1,66 @@
+import React from "react";
+import "./Hero.css";
+import { HiLocationMarker } from "react-icons/hi";
+//import CountUp from "react-countup/build/CountUp"  <CountUp start={88000} end={9000} durantion={4}/>
+import CountUp from "react-countup";
+function Hero() {
+  return (
+    <section className="hero-wrapper">
+      <div className="paddings innerWidth flexCenter hero-container">
+        {/*left side*/}
+        <div className="flexColStart hero-left">
+          <div className="hero-title">
+            <div className="orange-circle" />
+            <h1>
+              Discover
+              <br />
+              Most Suitable
+              <br />
+              Property
+            </h1>
+          </div>
+          <div className="flexColStart hero-des">
+            <span>Find a variety of properties that suit you very easily</span>
+            <span>Forget all difficulties in finding a home for you</span>
+          </div>
+          <div className="flexCenter search-bar">
+            <HiLocationMarker color="var(--blue)" size={25} />
+            <input type="text" />
+            <button className="button">Search</button>
+          </div>
+          <div className="flexCenter stats">
+            <div className="flexColCenter stat">
+              <span>
+                <CountUp start={88000} end={9000} durantion={4} />
+                <span>+</span>
+              </span>
+              <span className="secondaryText">Sold Houses</span>
+            </div>
+            <div className="flexColCenter stat">
+              <span>
+                <CountUp start={1950} end={2000} durantion={4} />
+                <span>+</span>
+              </span>
+              <span className="secondaryText">Happy Customers</span>
+            </div>
+            <div className="flexColCenter stat">
+              <span>
+                <CountUp end={28} />
+                <span>+</span>
+              </span>
+              <span className="secondaryText">Award Winnings</span>
+            </div>
+          </div>
+        </div>
+        {/*right side*/}
+        <div className="flexCenter hero-right">
+          <div className="image-container">
+            <img src="./hero-image.png" alt="luxurious building" />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Hero;
