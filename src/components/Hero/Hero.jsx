@@ -20,8 +20,8 @@ function Hero() {
             </h1>
           </div>
           <div className="flexColStart hero-des">
-            <span>Find a variety of properties that suit you very easily</span>
-            <span>Forget all difficulties in finding a home for you</span>
+            <span className="secondaryText">Find a variety of properties that suit you very easily</span>
+            <span className="secondaryText">Forget all difficulties in finding a home for you</span>
           </div>
           <div className="flexCenter search-bar">
             <HiLocationMarker color="var(--blue)" size={25} />
