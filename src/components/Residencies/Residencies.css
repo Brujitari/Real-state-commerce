@@ -38,6 +38,7 @@
 .r-card>:nth-child(4) {
     font-size: 0.7rem;
     width: 15rem;
+    max-width: 100%;
 }
 
 .r-card:hover {
